@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,34 +15,34 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ParkingViewController" customModule="Parking_Boost" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4Y-99-DIO">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQt-7J-JmK">
-                                        <rect key="frame" x="0.0" y="105" width="375" height="542"/>
+                                        <rect key="frame" x="0.0" y="105" width="375" height="629"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjd-0j-DzP" userLabel="Content View">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="542"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="629"/>
                                                 <subviews>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3kc-ds-aog">
-                                                        <rect key="frame" x="0.0" y="-1" width="375" height="544"/>
+                                                        <rect key="frame" x="0.0" y="-1" width="375" height="630"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kLy-mr-HNP">
-                                                            <size key="itemSize" width="296" height="542"/>
-                                                            <size key="headerReferenceSize" width="50" height="50"/>
+                                                            <size key="itemSize" width="296" height="584"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                             <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="fog-2E-Wdt" customClass="ParkingUICollectionViewCell" customModule="Parking_Boost" customModuleProvider="target">
-                                                                <rect key="frame" x="70" y="1" width="296" height="542"/>
+                                                                <rect key="frame" x="20" y="23" width="296" height="584"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="296" height="542"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="296" height="584"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zxz-CE-1sX">
@@ -66,27 +66,21 @@
                                                                             </subviews>
                                                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </view>
-                                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G0H-9h-eRY">
-                                                                            <rect key="frame" x="0.0" y="187" width="296" height="451"/>
+                                                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZAy-lZ-Joy">
+                                                                            <rect key="frame" x="0.0" y="184" width="296" height="443"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                            <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Put tableview here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Da9-mf-Fqw">
-                                                                                    <rect key="frame" x="8" y="23" width="280" height="129"/>
-                                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                    <nil key="textColor"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Put tableview here asdasdasd asdasdasdasd asdasdasdasdasdasdasd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fil-6c-wiJ">
-                                                                                    <rect key="frame" x="8" y="171" width="280" height="129"/>
-                                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                    <nil key="textColor"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                            <color key="backgroundColor" red="0.89411764709999997" green="0.019607843140000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        </view>
+                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <prototypes>
+                                                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="9iI-iQ-dWe">
+                                                                                    <rect key="frame" x="0.0" y="28" width="296" height="80"/>
+                                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9iI-iQ-dWe" id="Zee-bk-SNh">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="296" height="79.666666666666671"/>
+                                                                                        <autoresizingMask key="autoresizingMask"/>
+                                                                                    </tableViewCellContentView>
+                                                                                </tableViewCell>
+                                                                            </prototypes>
+                                                                        </tableView>
                                                                     </subviews>
                                                                 </view>
                                                                 <connections>
@@ -95,10 +89,6 @@
                                                                 </connections>
                                                             </collectionViewCell>
                                                         </cells>
-                                                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gfp-Ea-t2X">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="544"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                        </collectionReusableView>
                                                         <connections>
                                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="dxt-0U-bap"/>
                                                             <outlet property="delegate" destination="BYZ-38-t0r" id="2gS-N5-l9u"/>
@@ -160,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-199.19999999999999" y="146.17691154422789"/>
+            <point key="canvasLocation" x="-199.19999999999999" y="145.56650246305421"/>
         </scene>
     </scenes>
 </document>
