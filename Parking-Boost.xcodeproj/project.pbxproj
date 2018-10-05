@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4285F7622167505B007439A5 /* ParkingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4285F7612167505B007439A5 /* ParkingView.xib */; };
+		4285F76421675ABC007439A5 /* ParkingDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4285F76321675ABC007439A5 /* ParkingDetailsTableViewCell.swift */; };
 		42F0863021645C6900E81DA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0862F21645C6900E81DA1 /* AppDelegate.swift */; };
 		42F0863521645C6900E81DA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F0863321645C6900E81DA1 /* Main.storyboard */; };
 		42F0863721645C6B00E81DA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42F0863621645C6B00E81DA1 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		4285F7612167505B007439A5 /* ParkingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingView.xib; sourceTree = "<group>"; };
+		4285F76321675ABC007439A5 /* ParkingDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		42F0862C21645C6900E81DA1 /* Parking-Boost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parking-Boost.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F0862F21645C6900E81DA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42F0863421645C6900E81DA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				42F08645216477CB00E81DA1 /* ParkingUICollectionViewCell.swift */,
 				42F08643216474CE00E81DA1 /* Cars.swift */,
 				4285F7612167505B007439A5 /* ParkingView.xib */,
+				4285F76321675ABC007439A5 /* ParkingDetailsTableViewCell.swift */,
 			);
 			path = "Parking-Boost";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				42F08644216474CE00E81DA1 /* Cars.swift in Sources */,
 				42F0864221646F6A00E81DA1 /* ParkingViewController.swift in Sources */,
 				42F08646216477CB00E81DA1 /* ParkingUICollectionViewCell.swift in Sources */,
+				4285F76421675ABC007439A5 /* ParkingDetailsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

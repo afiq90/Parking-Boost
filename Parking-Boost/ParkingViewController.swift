@@ -13,12 +13,12 @@ class ParkingViewController: UIViewController {
     @IBOutlet weak var plateNumberLabel: UILabel!
     @IBOutlet weak var carNameLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
     
     private var cars = Cars.createCars()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,3 +48,5 @@ extension ParkingViewController: UICollectionViewDataSource {
     }
     
 }
+
+
