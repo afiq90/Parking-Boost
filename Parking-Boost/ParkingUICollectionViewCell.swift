@@ -25,10 +25,6 @@ class ParkingUICollectionViewCell: UICollectionViewCell {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ParkingView", bundle: nil), forCellReuseIdentifier: "ParkingDetailsTableViewCell")
         tableView.backgroundColor = UIColor.clear
-//        tableView.backgroundView?.layer.cornerRadius = 10
-//        tableView.backgroundView?.isHidden = true
-//        tableView.backgroundView?.backgroundColor = UIColor.purple
-//        tableView.contentInset = UIEdgeInsets(top: 20, left: 0,bottom: 20,right: 0)
         plateNumberLabel.text = cars.plateNumber
         carNameLabel.text = cars.carName
     }
@@ -37,7 +33,7 @@ class ParkingUICollectionViewCell: UICollectionViewCell {
 
 extension ParkingUICollectionViewCell: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
