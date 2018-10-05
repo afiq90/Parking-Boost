@@ -23,9 +23,10 @@ class ParkingDetailsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-     
+        
         containerView.layer.cornerRadius = 10;
         containerView.layer.masksToBounds = true;
+        containerView.layer.borderWidth = 0.5
         statusView.layer.cornerRadius = 10;
         statusView.layer.masksToBounds = true;
     }

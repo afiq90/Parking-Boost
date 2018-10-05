@@ -27,7 +27,8 @@ class ParkingUICollectionViewCell: UICollectionViewCell {
         tableView.backgroundColor = UIColor.clear
 //        tableView.backgroundView?.layer.cornerRadius = 10
 //        tableView.backgroundView?.isHidden = true
-        tableView.backgroundView?.backgroundColor = UIColor.purple
+//        tableView.backgroundView?.backgroundColor = UIColor.purple
+//        tableView.contentInset = UIEdgeInsets(top: 20, left: 0,bottom: 20,right: 0)
         plateNumberLabel.text = cars.plateNumber
         carNameLabel.text = cars.carName
     }
@@ -53,8 +54,18 @@ extension ParkingUICollectionViewCell: UITableViewDelegate, UITableViewDataSourc
 
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 229
+        return 239
     }
+    
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 100
+//    }
+//
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let spaceView = UIView()
+//        spaceView.backgroundColor = UIColor.clear
+//        return spaceView
+//    }
     
 //    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
 //        cell.backgroundColor = UIColor.clear
