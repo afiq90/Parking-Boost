@@ -13,6 +13,7 @@ class ParkingUICollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var plateNumberLabel: UILabel!
     @IBOutlet weak var carNameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var cars: Cars! {
         didSet {
@@ -33,7 +34,7 @@ class ParkingUICollectionViewCell: UICollectionViewCell {
 
 extension ParkingUICollectionViewCell: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 5
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,6 +52,10 @@ extension ParkingUICollectionViewCell: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 239
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print("tableView content size: \(scrollView.contentSize)")
     }
     
 //    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
