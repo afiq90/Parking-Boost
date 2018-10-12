@@ -55,7 +55,10 @@ extension ParkingUICollectionViewCell: UITableViewDelegate, UITableViewDataSourc
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print("tableView content size: \(scrollView.contentSize)")
+        print("tableView content size: \(tableView.contentSize)")
+        print("tableView content size height: \(tableView.contentSize.height)")
+        print("tableView frame height: \(tableView.frame.size.height)")
+
     }
     
 //    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
