@@ -8,17 +8,20 @@
 
 import UIKit
 
-class ParkingViewController: UIViewController {
+class ParkingViewController: UIViewController, UIScrollViewDelegate {
   
     @IBOutlet weak var plateNumberLabel: UILabel!
     @IBOutlet weak var carNameLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var scrollView: UIScrollView!
+
     private var cars = Cars.createCars()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +29,11 @@ class ParkingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
   
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print("scrollView content size: \(scrollView.contentSize)")
+        print("scrollView content size height: \(scrollView.contentSize.height)")
+        print("scrollView frame height: \(scrollView.frame.size.height)")
+    }
 
 }
 
