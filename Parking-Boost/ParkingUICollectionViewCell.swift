@@ -51,7 +51,7 @@ extension ParkingUICollectionViewCell: UITableViewDelegate, UITableViewDataSourc
 
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 239
+        return 200
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
